@@ -1,0 +1,19 @@
+zh-CN:
+  devise:
+    sessions:
+      admin_user:
+        signed_in: 欢迎回来
+      user:
+        signed_out: ""
+        already_signed_out: ""
+        signed_in: 欢迎回来
+    failure:
+      user:
+        not_found_in_database: 未注册
+        invalid: 密码不正确
+      admin_user:
+        invalid: 用户名密码不正确
+        not_found_in_database: 未注册
+        unauthenticated: 退出登录
+        signed_in: 登录成功
+

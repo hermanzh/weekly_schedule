@@ -1,0 +1,59 @@
+zh-CN:
+  time:
+    formats:
+     long: "%Y-%m-%d %H:%M:%S"
+  date:
+    formats:
+      long: "%Y-%m-%d"
+  attributes:
+    name: 名称
+    created_at: 创建时间
+    updated_at: 更新时间
+  activerecord:
+    errors:
+      messages:
+        blank: 不能为空
+        record_invalid: 记录不合法, 无法创建
+        invalid: "验证失败: %{value}"
+        taken: "%{value}已被使用"
+        not_a_number: 必须是数字
+        too_short: "不能少于%{count}位"
+      attributes:
+        password_confirmation:
+          confirmation: 两次输入的密码不一致
+      models:
+        goal:
+          attributes:
+            schedule:
+              required: 计划为必选
+    models:
+      goal:
+        one: 目标
+        other: 目标
+      schedule:
+        one: 计划
+        other: 计划
+      admin_user:
+        one: 后台用户
+        other: 后台用户
+    attributes:
+      goal:
+        role: 角色
+        achieve_goals: 计划目标
+        details: 详细
+        is_achieved: 是否完成
+        schedule: 所属计划
+        Monday: 周一
+        Tuesday: 周二
+        Wednesday: 周三
+        Thursday: 周四
+        Friday: 周五
+        Saturday: 周六
+        Sunday: 周日
+        day_of_week: 周几
+      schedule:
+        name: 计划标题
+        begin_at: 开始时间
+        end_at: 结束时间
+        is_achieved: 是否完成
+        comment: 备注
