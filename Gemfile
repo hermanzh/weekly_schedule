@@ -54,9 +54,20 @@ group :development do
   gem 'annotate', require: false
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'haml'
+
+# sidekiq
+gem 'sidekiq'
+# gem 'sinatra', github: 'sinatra', require: false
+gem 'sidekiq-scheduler', '~> 2.0'
+gem 'sidekiq-limit_fetch'

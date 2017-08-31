@@ -1,5 +1,5 @@
 ActiveAdmin.register Goal do
-  permit_params :role, :achieve_goals, :details, :is_achieved, :schedule_id
+  permit_params :role, :achieve_goals, :details, :is_achieved, :schedule_id, :day_of_week
 
   index do
     column :role

@@ -1,0 +1,6 @@
+%table{ border: '5px', cellpadding: '5'}
+  -@weeks.each do |day|
+    %tr
+      %td #{day}
+      -@schedule&.goals&.is_today(day)&.each do |goal|
+        %td (#{goal.role})#{goal.achieve_goals}
